@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>    
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>            
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> Future Software Engineer/Front End Developer</p>
+            <h1>Hi, I'm <span>Dominick</span><br> Powell from Kingston,Jamaica</h1>
+        </div>
+    </div>
+</div>
+
+<!--------------------------ABOUT--------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>I'm a passionate aspiring software engineer specializing in front-end development and software testing. 
+                    Fluent in English, Jamaican Creole, and elementary Spanish, I aspire to excel in HTML, Java, JavaScript, Node.js, React Native, and SQL. 
+                    Currently pursuing my BSc in Software Engineering with a minor in Economics at the University of the West Indies, Mona. <br><br>
+
+                    I am not only focused on the academics. I tend to dabble in the film world as well. I enjoy watching movies and tv-series of the science fiction genre.
+                    The Marvel Cinematic Universe, The Harry Potter Series and the Star Wars Series are what truly have my heart when it comes on to science fiction. <br><br>
+
+                    I also have a love for sports but unfortunately for my well being, I support the Chelsea football club. 
+                    I am only redeemed when I see my other team at work, Real Madrid FC.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('languages')">Languages</p>
+                    <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span></li>
+                        <li><span>HTML</span></li>
+                        <li><span>Java</span></li>
+                        <li><span>React Native</span></li>
+                        <li><span>Node.js</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>MySQL</span></li>
+                        <li><span>Software Testing</span></li>
+                        <li><span>Group Collaboration</span></li>
+                        <li><span>Communication</span></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="languages">
+                    <ul>
+                        <li><span>English</span></li>
+                        <li><span>Jamaican Creole</span></li>
+                        <li><span>Elementary Spanish</span></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="interests">
+                    <ul>
+                        <li><span>Software Front-End Development</span></li>
+                        <li><span>Web Development</span></li>
+                        <li><span>Software Testing</span></li>
+                        <li><span>Quality Assurance</span></li>
+                        <li><span>Football</span></li>
+                        <li><span>Basketball</span></li>
+                        <li><span>Field Hockey</span></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>July 2019 - August 2019</span><br>Accounting Intern at Kirk Distributors</li>
+                        <li><span>June 2021 - August 2021</span><br> Intern at Jamaica Cricket Association</li>
+                        <li><span>June 2022 - July 2022</span><br>Marketing Intern/Social Media Manager at Jamaica Cricket Association</li>
+                        <li><span>February 2024 - Present</span><br>Mathematics Tutor at Sandy's Online Tutoring Service</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Kingston College</span><br>2014-2019</li>
+                        <li><span>Wolmer's School for Boys</span><br>2019-2021</li>
+                        <li><span>University of the West Indies - Mona
+                                    Major: Software Engineering, Minor: Economics</span><br>2021-2024</li>
+                    </ul>
+                </div>
+
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--------------------------Portfolio--------------------------->
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Portfolio </h1>
+       
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png" style="width: 250px; height: auto;">
+                <div class="layer">
+                    <h3>Dormitory Security Managemnt System</h3>
+                    <p> This is a group project where we are developing a mobile and web application that allows users to mitigate incidents on a 
+                        dormitory. The application also allows residents to make complaints, restrict and add guests. 
+                          </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png" style="width: 250px; height: auto;">
+                <div class="layer">
+                    <h3>Spell Checker</h3>
+                    <p> Simple python based UI with functionality that can be used to check if the spelling of words are correct.  </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png" style="width: 250px; height: auto;">
+                <div class="layer">
+                    <h3>Dice Roller</h3>
+                    <p> Simple python GUI with logic that allows a user to roll a set of dice randomly.  </p>
+                </div>
+            </div>
+
+        </div>
+        
+        <a href=""></a>
+
+
+    </div>
+
+</div>
+<br>
+<br>
+<br><br>
+
+
+
+
+
+<!--------------------------Contact--------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>dombert123@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>(876)432-5839</p>
+                <div class="social-icons">
+                    <a href="www.linkedin.com/in/dominick-b-powell"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/dominick1809"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/dominick.bp/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/Dominick Powell - Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit " class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Dominick.</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks ){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents ){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwNpjJbUihck6vGz3pMGhj6xPLxM0_cpIDc5oJQ9IVxh_pB4indPYkzwP8HzY7EbNQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message sent succesfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            
+            },5000)
+            form.reset()
+            
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
